@@ -6,13 +6,16 @@ These scripts are wrappers around the `xgrid` command line tool. It
 facilitates the construction and submission of batch files for 
 *multiple* input files. 
 
+- `xg-batch.py` - Generate and submit batch files to the Xgrid controller.
+- `xg-result.py` - Get results from the Xgrid controller.
+
 ## Examples
 
 To see the available options::
 
     python xg-batch.py -h
 
-To generate and submit a batch file with jobs that call a program
+To generate and submit a batch file with jobs that run a program
 `prog` with command line argument `arg` on several files:
 
     python xg-batch.py -s -j jobname -c "/path/to/prog -a arg" /path/to/files/*.ext 
